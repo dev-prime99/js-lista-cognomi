@@ -1,13 +1,17 @@
 
-var cognomi = ["", "Rossi", "Verdi", "Gialli", "Bianco" ];
+var cognomi = ["", "rossi", "verdi", "gialli", "bianco" ];
+
+//BONUS
+// var cognomi = ["", "Rossi", "Verdi", "Gialli", "Bianco" ];
 
 console.log(cognomi);
 
 var utente = (prompt("Inserisci il tuo cognome")).toLowerCase();
 
-var comp = utente.toUpperCase().charAt(0) + utente.slice(1);
+var comp = utente;
 
-console.log(comp);
+//BONUS
+//var comp = utente.toUpperCase().charAt(0) + utente.slice(1);
 
 var inserimento = cognomi.push(comp);
 
@@ -23,6 +27,7 @@ while (i < cognomi.length) {
   document.getElementById('list').innerHTML += "<li>" + cognomi[i] + "</li>";
 
   console.log(cognomi.indexOf(comp));
+  document.getElementById('risultato').innerHTML = "Il tuo cognome è alla posizione numero: " + cognomi.indexOf(comp);
 
   i++;
 }
