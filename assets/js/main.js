@@ -9,7 +9,6 @@ console.log(cognomi);
 
 var i = 1;
 
-// onKeyUp="this.value=this.value.substr(0,1).toUpperCase()+th is.value.substr(1,this.value.length).toLowerCase();"
 
 while (i < cognomi.length) {
   cognomi.sort();
